@@ -64,6 +64,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
+permalink: /:slug/
+
 search: true
 
 title: "ocmod.space"
