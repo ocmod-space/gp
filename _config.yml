@@ -111,3 +111,14 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ocmod_space"
+
+# Google services
+analytics:
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: "G-6Q9XW0BCSJ"
+    anonymize_ip: true # true, false (default)
+reCaptcha:
+  siteKey: "6LcrhwElAAAAAKIQ5OmXPsHKawtuRBah7YRVKrUC"
+  secret: "6LcrhwElAAAAAH7KngSa0QWXNC4DE38fOOIULS0B"
+google_site_verification: "KJLffCCe_c_Kh_Ru_bQX6A9tpfBTbCOI5UNDsiE2lo4"
