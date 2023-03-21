@@ -35,6 +35,6 @@ Contact Button in [action](http://ocmod.freevar.com/oc/3038/a){:target="_blank"}
 
 ## Links
 [OpenCart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=43102).  
-[Contact Button](https://www.ocmod.space/contact-button/) blog page.  
+[GitHub](https://github.com/ocmod-space/ocmod-contact-button){:target="_blank"}.  
 
 {% include purchasing.md %}
