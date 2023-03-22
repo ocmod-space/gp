@@ -5,7 +5,7 @@ permalink: /about/
 
 Hi there!
 
-My name is Andrii and I'm just another OpenCart module developer from Ukraine. I have been developing for OpenCart CMS since the middle of 2018, and during this time this has turned from a partial source of income into one of my hobbies (although it sounds strange even to me).
+My name is Andrii and I'm just another OpenCart module developer from Ukraine. I have been developing for OpenCart CMS since the middle of 2018, and during this time this has turned from an additional source of income into one of my hobbies (although it sounds strange even to me).
 
 This blog was created with two goals in mind. The first, but secondary in essence, is an introduction to the Jekyll CMS in combination with Github Pages platform. But the main purpose of the blog creation is an additional distribution channel for the extensions I have created for OpenCart.
 
