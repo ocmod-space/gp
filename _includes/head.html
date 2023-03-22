@@ -25,8 +25,8 @@
     sessionStorage.setItem('theme', 'alternative');
     node1 = document.getElementById('theme_default');
     node2 = document.getElementById('theme_alternative');
-    node1.setAttribute('rel', 'stylesheet alternate');
     node2.setAttribute('rel', 'stylesheet');
+    node1.setAttribute('rel', 'stylesheet alternate');
   } else {
     sessionStorage.setItem('theme', 'default');
   }
