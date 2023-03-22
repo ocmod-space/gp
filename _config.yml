@@ -6,7 +6,9 @@
 
 repository: "ocmod-space/ocmod-space.github.io"
 remote_theme: underr-ua/minimal-mistakes-jekyll-theme
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+theme_default: default
+theme_alternative: dark
 
 timezone: Europe/Kyiv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

@@ -1,0 +1,31 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough) 
+---
+
+@charset "utf-8";
+
+// @import "minimal-mistakes/skins/{{ site.theme_default | default: 'default' }}"; // skin
+// @import "minimal-mistakes"; // main partials
+
+.theme__toggle {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  height: 2rem;
+  border: 0;
+  outline: none;
+  color: #6f777d;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+
+  &:hover {
+    color: #53595e;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
