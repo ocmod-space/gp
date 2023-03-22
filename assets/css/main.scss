@@ -28,4 +28,48 @@
   }
 }
 
+.search__toggle {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  height: 2rem;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.page__content :not(pre)>code {
+  background: #404040;
+}
+
+.site-logo img {
+  max-height: 36px;
+  min-height: 36px;
+  min-width: 36px;
+  transition: all 0.2s ease-in-out;
+
+  @media (min-width: 64em) {
+    max-height: 110px;
+    max-width: 110px;
+  }
+}
+
+.site-title {
+  text-align: center;
+}
+
+.site-subtitle {
+  font-size: .425em;
+}
+
+.submitted-page {
+  padding: 40px;
+  border: 2px solid #ededeb;
+  border-radius: 10px;
+}
 
