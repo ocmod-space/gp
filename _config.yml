@@ -76,7 +76,7 @@ title_separator: "|"
 description: >- # this means to ignore newlines until "baseurl:"
   OpenCart Modules and Extensions.
 
-name: &name "Andrii" # &name is a YAML anchor which can be *referenced later
+name: &name "Andrii B." # &name is a YAML anchor which can be *referenced later
 logo: "/assets/images/logo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 teaser: # path of fallback teaser image, e.g.
