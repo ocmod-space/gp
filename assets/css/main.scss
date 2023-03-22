@@ -18,10 +18,14 @@
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+
+  &:hover {
+    color: #53595e;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.theme__toggle:focus {
-  outline: none;
-  color: #53595e;
-}
 
