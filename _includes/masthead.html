@@ -31,10 +31,30 @@
         {% endif %}
         {% if site.theme_alternative %}
         <button class="theme__toggle" type="button">
-          <i class="fas fa-fw fa-adjust" aria-hidden="true" onclick="node1 = document.getElementById('theme_default'); node2 = document.getElementById('theme_alternative'); if (node1.getAttribute('rel') == 'stylesheet') { node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet'); sessionStorage.setItem('theme', 'alternative'); } else { node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'default'); } return false;"></i>
+          <i class="fas fa-fw fa-adjust" aria-hidden="true" onclick="theme_toggle_click()"></i>
         </button>
         {% endif %}
       </nav>
     </div>
   </div>
 </div>
+{% if site.theme_alternative %}
+<script type="text/javascript">
+  function theme_toggle_click() {
+    let node1 = document.getElementById('theme_default');
+    let node2 = document.getElementById('theme_alternative');
+
+    if (node1.getAttribute('rel') == 'stylesheet') {
+      node2.setAttribute('rel', 'stylesheet');
+      node1.setAttribute('rel', 'stylesheet alternate');
+      sessionStorage.setItem('theme', 'alternative');
+    } else {
+      node1.setAttribute('rel', 'stylesheet');
+      node2.setAttribute('rel', 'stylesheet alternate');
+      sessionStorage.setItem('theme', 'default');
+    }
+
+    return false;
+  }
+</script>
+{% endif %}
