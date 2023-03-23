@@ -126,3 +126,20 @@ reCaptcha:
   siteKey: "6LcrhwElAAAAAKIQ5OmXPsHKawtuRBah7YRVKrUC"
   secret: "6LcrhwElAAAAAH7KngSa0QWXNC4DE38fOOIULS0B"
 google_site_verification: "KJLffCCe_c_Kh_Ru_bQX6A9tpfBTbCOI5UNDsiE2lo4"
+
+# comments
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id: "R_kgDOJHyDMw"
+    category_name: "Announcements"
+    category_id: "DIC_kwDOJHyDM84CVE8z" # Shown during giscus setup at https://giscus.app
+    discussion_term: "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled: "1"
+    theme: "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark"
+    # added attributes
+    strict: "1"
+    position: top # "top", "bottom"
+    metadata: "0"
+    lang: "en"
+    lazy: true
