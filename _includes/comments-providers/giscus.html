@@ -27,7 +27,7 @@
     {% endif %}
     script.setAttribute('crossorigin', 'anonymous');
 
-    script.async = true;
+    script.setAttribute('async', '');
 
     commentContainer.appendChild(script);
   })();
