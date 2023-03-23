@@ -19,10 +19,10 @@
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
     script.setAttribute('crossorigin', 'anonymous');
 
-    script.setAttribute('input-position', '{{ site.comments.giscus.position | default: "top" }}');
-    script.setAttribute('emit-metadata', '{{ site.comments.giscus.metadata | default: 0 }}');
-    script.setAttribute('strict', '{{ site.comments.giscus.strict | default: 0 }}');
-    script.setAttribute('lang', '{{ site.comments.giscus.lang' | default: "en");
+    script.setAttribute('data-input-position', '{{ site.comments.giscus.position | default: "top" }}');
+    script.setAttribute('data-emit-metadata', '{{ site.comments.giscus.metadata | default: 0 }}');
+    script.setAttribute('data-strict', '{{ site.comments.giscus.strict | default: 0 }}');
+    script.setAttribute('data-lang', '{{ site.comments.giscus.lang' | default: "en");
 
     {% if site.comments.giscus.lazy %}
     script.setAttribute('lazy', '{{ site.comments.giscus.lazy');
