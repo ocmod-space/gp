@@ -17,16 +17,14 @@
     script.setAttribute('data-mapping', '{{ site.comments.giscus.discussion_term | default: "pathname" }}');
     script.setAttribute('data-reactions-enabled', '{{ site.comments.giscus.reactions_enabled | default: 1 }}');
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
-    script.setAttribute('crossorigin', 'anonymous');
-
     script.setAttribute('data-input-position', '{{ site.comments.giscus.position | default: "top" }}');
     script.setAttribute('data-emit-metadata', '{{ site.comments.giscus.metadata | default: 0 }}');
     script.setAttribute('data-strict', '{{ site.comments.giscus.strict | default: 0 }}');
     script.setAttribute('data-lang',  '{{ site.comments.giscus.lang | default: "en" }}');
-
     {% if site.comments.giscus.lazy %}
     script.setAttribute('data-loading', 'lazy');
     {% endif %}
+    script.setAttribute('crossorigin', 'anonymous');
 
     commentContainer.appendChild(script);
   })();
