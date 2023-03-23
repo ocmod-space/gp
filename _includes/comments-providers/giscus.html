@@ -22,7 +22,7 @@
     script.setAttribute('data-input-position', '{{ site.comments.giscus.position | default: "top" }}');
     script.setAttribute('data-emit-metadata', '{{ site.comments.giscus.metadata | default: 0 }}');
     script.setAttribute('data-strict', '{{ site.comments.giscus.strict | default: 0 }}');
-    script.setAttribute('data-lang', '{{ site.comments.giscus.lang' | default: "en");
+    script.setAttribute('data-lang',  '{{ site.comments.giscus.lang | default: "en"');
 
     {% if site.comments.giscus.lazy %}
     script.setAttribute('data-loading', '{{ site.comments.giscus.lazy }}');
