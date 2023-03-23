@@ -25,7 +25,7 @@
     script.setAttribute('data-lang', '{{ site.comments.giscus.lang' | default: "en");
 
     {% if site.comments.giscus.lazy %}
-    script.setAttribute('data-loading', '{{ site.comments.giscus.lazy');
+    script.setAttribute('data-loading', '{{ site.comments.giscus.lazy }} ');
     {% endif %}
 
     commentContainer.appendChild(script);
