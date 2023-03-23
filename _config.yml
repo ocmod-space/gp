@@ -137,9 +137,8 @@ comments:
     discussion_term: "og:title" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled: 1
     theme: "preferred_color_scheme" # "light" (default), "dark", "dark_dimmed", "transparent_dark"
-    # added attributes
     strict: 1
-    position: "top" # "top", "bottom"
-    metadata: 1
+    input_position: "top" # "top", "bottom"
+    emit_metadata: 0
     lang: "en"
     lazy: true
