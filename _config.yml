@@ -132,7 +132,7 @@ comments:
   provider: "giscus"
   giscus:
     repo_id: "R_kgDOJHyDMw"
-    category_name: "General"
+    category_name: "Announcements"
     category_id: "DIC_kwDOJHyDM84CVE8z" # Shown during giscus setup at https://giscus.app
     discussion_term: "og:title" # "pathname" (default), "url", "title", "og:title"
     reactions_enabled: 1
