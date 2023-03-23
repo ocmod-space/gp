@@ -27,11 +27,8 @@
     {% endif %}
     script.setAttribute('crossorigin', 'anonymous');
 
-    script.toggleAttribute('async');
-    script.setAttribute('data1', true);
-    script.setAttribute('data2', false);
-    script.setAttribute('data3', '');
-    script.setAttribute('data4', "");
+    script.setAttribute('async', '');
+    console.log(script.getAttribute('async'));
 
     commentContainer.appendChild(script);
   })();
