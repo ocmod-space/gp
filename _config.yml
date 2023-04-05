@@ -4,9 +4,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+
 repository: "ocmod-space/ocmod-space.github.io"
-remote_theme: underr-ua/minimal-mistakes-jekyll-theme
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "underr-ua/minimal-mistakes-ce"
+
+# "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+theme_light: "default"
+theme_dark: "dark"
 
 timezone: Europe/Kyiv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

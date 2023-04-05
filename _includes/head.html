@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+
+{% include seo.html %}
+
+{% unless site.atom_feed.hide %}
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"
+  type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+{% if site.theme_dark %}
+<script type="text/javascript">
+  // If `prefers-color-scheme` is not supported, fall back to light mode.
+  // In this case, light.css will be downloaded with highest priority.
+  if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+    console.info('🎉 Dark color theme supported!');
+
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML(
+      'beforeend',
+      '<link rel="stylesheet" href="assets/css/dark.css" onload="document.documentElement.style.display = \'\'"',
+    );
+  }
+</script>
+{% endif %}
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+</noscript>
+
+{% if site.theme_dark %}
+<link rel="stylesheet" href="{{ '/assets/css/dark.css' | relative_url }}" media="(prefers-color-scheme: dark), (prefers-color-scheme: light)">
+{% endif %}
+
+{% if site.theme_light %}
+<link rel="stylesheet" href="{{ '/assets/css/light.css' | relative_url }}" media="(prefers-color-scheme: light), (prefers-color-scheme: dark)">
+{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+{% if site.theme_light and site.theme_dark %}
+<script type="text/javascript" src="{{ '/assets/js/toggle_theme.js' | relative_url }}"></script>
+{% endif %}
+
+{% if site.head_scripts %}
+{% for script in site.head_scripts %}
+<script src="{{ script | relative_url }}"></script>
+{% endfor %}
+{% endif %}
