@@ -4,7 +4,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
 repository: "ocmod-space/ocmod-space.github.io"
 remote_theme: "underr-ua/minimal-mistakes-ce"
 
@@ -14,9 +13,6 @@ theme_dark: "dark"
 
 timezone: Europe/Kyiv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-breadcrumbs: false
-markdown: kramdown
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -25,6 +21,12 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+markdown: kramdown
+breadcrumbs: false
+search: true
+
+permalink: /:slug/
 
 include:
   - _pages
@@ -68,9 +70,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-permalink: /:slug/
-
-search: true
 
 title: "ocmod.space"
 subtitle: "opencart modules development"
@@ -78,19 +77,19 @@ title_separator: "|"
 description: >- # this means to ignore newlines until "baseurl:"
   OpenCart Modules and Extensions.
 
-name: &name "Andrii B. aka underr" # &name is a YAML anchor which can be *referenced later
+name: &name "Andrii B." # &name is a YAML anchor which can be *referenced later
 logo: "/assets/images/logo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 teaser: # path of fallback teaser image, e.g.
 
 # Site Author
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/photo.jpg"
-  bio              : "Just another OpenCart module developer..."
-  location         : "Ukraine"
+  name: *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar: "/assets/images/photo.jpg"
+  bio: "Just another OpenCart module developer..."
+  location: "Ukraine"
   links:
-    - label: "OpenCart Marketplace"
+    - label: "OpenCart"
       icon: "fab fa-fw fa-opencart"
       url: "https://www.opencart.com/index.php?route=marketplace/extension&filter_member=ocmod.space"
     - label: "GitHub"
@@ -105,7 +104,7 @@ author:
 
 footer:
   links:
-    - label: "OpenCart Marketplace"
+    - label: "OpenCart"
       icon: "fab fa-fw fa-opencart"
       url: "https://www.opencart.com/index.php?route=marketplace/extension&filter_member=ocmod.space"
     - label: "GitHub"
