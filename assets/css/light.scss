@@ -6,3 +6,8 @@
 
 @import "minimal-mistakes/skins/{{ site.theme_light | default: 'default' }}";
 @import "minimal-mistakes"
+
+
+.social-icons .fa-opencart {
+ color:#25C0F2;
+}
