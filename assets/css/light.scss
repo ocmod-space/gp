@@ -5,7 +5,7 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.theme_light | default: 'default' }}";
-@import "minimal-mistakes"
+@import "minimal-mistakes";
 
 
 .social-icons .fa-opencart {
